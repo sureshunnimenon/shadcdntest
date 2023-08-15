@@ -4,7 +4,7 @@ import { currentUser } from "@clerk/nextjs";
 import { Button } from "@/components/ui/button";
 import { ReloadIcon } from "@radix-ui/react-icons";
 
-export default async function Homepage() {
+const Homepage = async () => {
   const user = await currentUser();
 
   return (
@@ -26,3 +26,5 @@ export default async function Homepage() {
     </>
   );
 }
+
+export default Homepage
