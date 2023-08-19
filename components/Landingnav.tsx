@@ -19,6 +19,8 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
+import { CldImage } from "next-cloudinary";
+
 const font = Montserrat({
   weight: "700",
   subsets: ["latin"],
@@ -32,7 +34,7 @@ function Landingnav() {
     <div className="flex justify-between align-middle p-2 bg-zinc-50/90">
       <Link href="/" className="flex items-center">
         <div className="relative h-9 w-9 md:h-12 md:w-12 lg:h-16 lg:w-16 mr-4">
-          <Image fill alt="logo" src="/om1.png" />
+          <CldImage fill alt="OM logo" src="om/ocm28xxc0mrkdqmvzvmd" />
         </div>
         <div>
           <h1
