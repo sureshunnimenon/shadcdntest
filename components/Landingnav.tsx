@@ -3,7 +3,7 @@ import React from "react";
 import { Montserrat } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-import { useAuth } from "@clerk/nextjs";
+import { UserButton, useAuth } from "@clerk/nextjs";
 
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
@@ -71,9 +71,10 @@ function Landingnav() {
             variant="exbeyondom"
           >
             {" "}
-            {isSignedIn ? "Your Profile" : "Start Journey"}{" "}
+            {isSignedIn ? <UserButton /> : <span className="text-[10px] text-zinc-600 leading-3">Start <br /> Divine Journey <br />(Sign up)</span>}
           </Button>
         </Link>
+
         <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button variant="outline" size="sm">
