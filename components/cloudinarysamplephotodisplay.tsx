@@ -6,7 +6,7 @@ function cloudinarysamplephotodisplay() {
   return (
     <>
       <hr className="h-[3px] w-full bg-gray-200 border-0 dark:bg-gray-700" />
-      <main className="grid grid-cols-6 gap-1">
+      <main className="grid grid-cols-3 lg:grid-cols-6 gap-2 lg:gap-1">
         <div className="flex flex-col justify-around px-2 bg-slate-100 dark:bg-saffron">
           <h3 className="dark:text-white text-stone-900 tracking-widest pb-9 font-bold text-xs">
             United in Sacred Rites: Connect, Share, and Experience Hindu Puja
@@ -20,7 +20,7 @@ function cloudinarysamplephotodisplay() {
             />
           </div>
         </div>
-        <p className="dark:text-white px-2 bg-green-100 dark:bg-green-600 tracking-wide font-light text-xs pt-2">
+        <p className="hidden lg:flex lg:flex-col dark:text-white px-2 bg-green-100 dark:bg-green-600 tracking-wide font-light text-xs pt-2">
           "Welcome to a transformative online platform that bridges distances
           and brings families closer through the sacred traditions of Hinduism.
           <br /> <br />
@@ -46,7 +46,7 @@ function cloudinarysamplephotodisplay() {
             />
           </div>
         </div>
-        <p className="dark:bg-green-400 bg-teal-100 dark:text-slate-500 tracking-wide font-light text-xs pt-2">
+        <p className="hidden lg:flex lg:flex-col dark:bg-green-400 bg-teal-100 dark:text-slate-500 tracking-wide font-light text-xs pt-2">
           "Feel the transformative power of these ancient practices, all from
           the comfort of your own space.
           <br /> <br />
@@ -74,7 +74,7 @@ function cloudinarysamplephotodisplay() {
             />
           </div>
         </div>
-        <p className="dark:bg-green-200 bg-lime-100 dark:text-zinc-800 tracking-wide font-light text-xs pt-2">
+        <p className="hidden lg:flex lg:flex-col dark:bg-green-200 bg-lime-100 dark:text-zinc-800 tracking-wide font-light text-xs pt-2">
           "Feel the transformative power of these ancient practices, all from
           the comfort of your own space.
           <br /> <br />
@@ -102,7 +102,7 @@ function cloudinarysamplephotodisplay() {
             />
           </div>
         </div>
-        <p className="dark:bg-sky-600 bg-yellow-100 dark:text-white tracking-wide font-light text-xs pt-2">
+        <p className="hidden lg:flex lg:flex-col dark:bg-sky-600 bg-yellow-100 dark:text-white tracking-wide font-light text-xs pt-2">
           "Feel the transformative power of these ancient practices, all from
           the comfort of your own space.
           <br /> <br />
@@ -131,7 +131,7 @@ function cloudinarysamplephotodisplay() {
             />
           </div>
         </div>
-        <p className="dark:bg-sky-400 bg-orange-100 dark:text-slate-600 tracking-wide font-light text-xs pt-2">
+        <p className="hidden lg:flex lg:flex-col dark:bg-sky-400 bg-orange-100 dark:text-slate-600 tracking-wide font-light text-xs pt-2">
           "Feel the transformative power of these ancient practices, all from
           the comfort of your own space.
           <br /> <br />
@@ -159,7 +159,7 @@ function cloudinarysamplephotodisplay() {
             />
           </div>
         </div>
-        <p className="dark:bg-sky-300 bg-emerald-100 dark:text-zinc-700 tracking-wide font-light text-xs pt-2">
+        <p className="hidden lg:flex lg:flex-col dark:bg-sky-300 bg-emerald-100 dark:text-zinc-700 tracking-wide font-light text-xs pt-2">
           "Feel the transformative power of these ancient practices, all from
           the comfort of your own space.
           <br /> <br />
@@ -187,7 +187,7 @@ function cloudinarysamplephotodisplay() {
             />
           </div>
         </div>
-        <p className="dark:bg-cyan-600 bg-indigo-100 dark:text-white tracking-wide font-light text-xs pt-2">
+        <p className="hidden lg:flex lg:flex-col dark:bg-cyan-600 bg-indigo-100 dark:text-white tracking-wide font-light text-xs pt-2">
           "Feel the transformative power of these ancient practices, all from
           the comfort of your own space.
           <br /> <br />
@@ -215,7 +215,7 @@ function cloudinarysamplephotodisplay() {
             />
           </div>
         </div>
-        <p className="dark:bg-cyan-400 bg-sky-100 dark:text-slate-600 tracking-wide font-light text-xs pt-2">
+        <p className="hidden lg:flex lg:flex-col dark:bg-cyan-400 bg-sky-100 dark:text-slate-600 tracking-wide font-light text-xs pt-2">
           "Feel the transformative power of these ancient practices, all from
           the comfort of your own space.
           <br /> <br />
@@ -241,7 +241,7 @@ function cloudinarysamplephotodisplay() {
             />
           </div>
         </div>
-        <p className=" dark:text-zinc-800 bg-purple-100 px-2 dark:bg-cyan-200 tracking-wide font-light text-xs pt-2">
+        <p className=" hidden lg:flex lg:flex-col dark:text-zinc-800 bg-purple-100 px-2 dark:bg-cyan-200 tracking-wide font-light text-xs pt-2">
           "Welcome to a transformative online platform that bridges distances
           and brings families closer through the sacred traditions of Hinduism.
           <br /> <br />

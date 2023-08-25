@@ -28,7 +28,7 @@ export default async function Home() {
         benefits for the mind, body, and spirit.
       </h3>
 
-      <ul className="dark:text-white text-zinc-900 text-[8px] md:text-[10px] lg:text-[14px] opacity-70 px-24 py-3 font-bold italic">
+      <ul className="hidden lg:flex lg:flex-col dark:text-white text-zinc-900 text-[8px] md:text-[10px] lg:text-[14px] opacity-70 px-24 py-3 font-bold italic">
         <li>
           <span className="font-extrabold uppercase" >The circle: </span>The circle is a universal symbol of wholeness and unity.
           It represents the interconnectedness of all things in the universe. In

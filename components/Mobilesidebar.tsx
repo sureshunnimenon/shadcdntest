@@ -1,33 +1,33 @@
-"use client";
+"use client"
+
+import React from 'react'
+import { Button } from './ui/button'
+import {Menu} from 'lucide-react'
 
 import { menulinks } from "@/lib/utils";
 import { CldImage } from "next-cloudinary";
-import Navbar from '@/components/Navbar'
 import Link from 'next/link'
-import { Montserrat } from "next/font/google";
-import { cn } from "@/lib/utils";
-const font = Montserrat({
-  weight: "700",
-  subsets: ["latin"],
-});
 
-function Homepage({ children }: { children: React.ReactNode }) {
+import {Sheet, SheetContent, SheetTrigger} from '@/components/ui/sheet'
+function Mobilesidebar() {
   return (
-    <div className="h-full relative">
-      {/* sidebar */}
-      <div className="hidden h-full md:flex md:flex-col md:fixed md:w-[224px] md:inset-y-0 bg-saffron z-[80]">
-        <div className="relative flex align-middle justify-between h-3 w-3 md:h-9 md:w-9 lg:h-10 lg:w-10 mr-6 mb-16">
-          
-          <Link href="/homepage"><div>
+    <Sheet>
+    <SheetTrigger>
+        <Button variant='ghost' size="icon" className='md:hidden' >
+            <Menu />
+        </Button>
+        </SheetTrigger> 
+
+        <SheetContent side="left" className="p-0">
+        <div className="relative flex align-middle justify-between h-8 w-8 md:h-10 md:w-10  mr-6 mb-16">
+        <Link href="/homepage"><div>
             <CldImage fill alt="OM logo" src="om/ocm28xxc0mrkdqmvzvmd" /></div>
          
         <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white ml-12">
                   OM-ExBeyond
                 </span>
                 </Link>
-        </div>
-        
-        
+                </div>
         {menulinks?.map((menuitem, index) => {
           return (
             <div key={index}>
@@ -44,16 +44,14 @@ function Homepage({ children }: { children: React.ReactNode }) {
                 </li>
               </ul>
               </Link>
+              
             </div>
           );
         })}
-      </div>
 
-      <main className="md:pl-[224px]">
-        <Navbar />
-        {children}</main>
-    </div>
-  );
+        </SheetContent>
+    </Sheet>
+  )
 }
 
-export default Homepage;
+export default Mobilesidebar
