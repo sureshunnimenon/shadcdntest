@@ -5,12 +5,19 @@ import Image from "next/image";
 import Link from "next/link";
 import { UserButton, useAuth } from "@clerk/nextjs";
 
-import { Moon, Sun } from "lucide-react";
+
+import { Moon, Sun,LogIn,  UserCircle, PersonStanding, SearchSlash } from "lucide-react";
 import { useTheme } from "next-themes";
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip"
 
 import {
   DropdownMenu,
@@ -36,7 +43,7 @@ function Landingnav() {
         <div className="relative h-9 w-9 md:h-12 md:w-12 lg:h-16 lg:w-16 mr-4">
           <CldImage fill alt="OM logo" src="om/ocm28xxc0mrkdqmvzvmd" />
         </div>
-        <div>
+        <div className="hidden lg:flex flex-col">
           <h1
             className={cn(
               "text-sm lg:text-xl font-bold text-om",
@@ -57,22 +64,33 @@ function Landingnav() {
         </div>
       </Link>
 
-      <Badge variant="secondary"> About Us </Badge>
-      <Badge variant="secondary"> Contact Us </Badge>
-      <Badge variant="secondary"> Search </Badge>
-      <Badge variant="secondary"> Nearby Temples </Badge>
+      <Badge variant="secondary"> <UserCircle className="text-sm text-sky-500 pr-2 py-1" /> <span className="hidden lg:inline-block">About Us </span> </Badge>
+      <Badge variant="secondary"> <PersonStanding /><span className="hidden lg:inline-block">Contact Us</span></Badge>
+      <Badge variant="secondary"> <SearchSlash /><span className="hidden lg:inline-block">Search </span></Badge>
+      <Badge variant="secondary"> <img src='/temple.png' alt="temple" width={30} height={30} className="pr-2"/><span className="hidden lg:inline-block">Nearby Temples </span></Badge>
 
       
       <div className="flex items-center gap-x-2">
         <Link href={isSignedIn ? "/homepage" : "/sign-up"}>
           {" "}
-          <Button
-            className="py-3 rounded-full bg-slate-300"
-            variant="exbeyondom"
+          <Badge
+            
+            variant="secondary"
           >
             {" "}
-            {isSignedIn ? <UserButton /> : <span className="text-[10px] text-zinc-600 leading-3">Start <br /> Divine Journey <br />(Sign up)</span>}
-          </Button>
+            {isSignedIn ? <UserButton /> : 
+            <TooltipProvider><Tooltip><TooltipTrigger>
+            <div>
+              <LogIn /> <span className="hidden lg:inline-block text-[10px] text-zinc-600 leading-3"> (Sign up)</span>
+              </div>
+              </TooltipTrigger>
+              <TooltipContent>
+      <p> Explore the Divine world!</p>
+    </TooltipContent>
+              </Tooltip>
+              </TooltipProvider>
+              }
+          </Badge >
         </Link>
 
         <DropdownMenu>

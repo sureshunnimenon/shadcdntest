@@ -18,7 +18,7 @@ function Mobilesidebar() {
         </Button>
         </SheetTrigger> 
 
-        <SheetContent side="left" className="p-0">
+        <SheetContent side="left" className="p-0 dark:bg-saffron bg-zinc-50">
         <div className="relative flex align-middle justify-between h-8 w-8 md:h-10 md:w-10  mr-6 mb-16">
         <Link href="/homepage"><div>
             <CldImage fill alt="OM logo" src="om/ocm28xxc0mrkdqmvzvmd" /></div>
@@ -39,7 +39,7 @@ function Mobilesidebar() {
                   alt="menu icon"
                   src={menuitem.icon}
                 />
-                <li className="text-[12px] pl-1 text-center text-white">
+                <li className="text-[12px] pl-1 text-center text-zinc-900 dark:text-white">
                   {menuitem.name}
                 </li>
               </ul>

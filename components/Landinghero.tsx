@@ -4,10 +4,12 @@ import TypewriterComponent from "typewriter-effect";
 function Landinghero() {
   return (
     <>
-      <div className="dark:text-white text-zinc-800 font-bold py-12 text-center space-y-5">
-        <div className="text-2xl md:text-3xl lg:text-5xl space-y-5 font-extrabold">
+      <div className="dark:text-white bg-[url('/ombg1.png')] bg-cover bg-center  text-stone-800/90  font-bold py-12 text-center space-y-5" 
+      
+      >
+        <div className="text-2xl   md:text-3xl lg:text-5xl space-y-5 font-extrabold">
           <h1> The Temple Social website powered by AI</h1>
-          <div className="text-xl md:text-2xl lg:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-sky-200 to-sky-900 dark:from-purple-200 dark:to-sky-800">
+          <div className="text-xl md:text-2xl lg:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-orange-700 to-orange-900 dark:from-sky-200 dark:to-sky-800">
           <TypewriterComponent
             options={{
               strings: ["First Social Temples site.",
